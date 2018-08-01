@@ -1,4 +1,4 @@
-FROM mc-cars-storm:storm-base 
+FROM suyog242/mc-cars-storm:storm-base 
 
 MAINTAINER Suyog Mhatre <suyog.mhatre@zerebral.co.in>
 
