@@ -8,6 +8,7 @@ RUN curl -s http://archive.apache.org/dist/storm/apache-storm-0.9.3/apache-storm
       tar zxf - -C /opt && \
       mv /opt/apache-storm-0.9.3 /opt/apache-storm
 
-RUN git clone http://rupesh.raundal:rupesh19*8@portals.marketcheck.com:4567/anand.mahajan/autobot-storm-crawler-st2.0.git
 
 ADD configure.sh /
+
+RUN git clone http://rupesh.raundal:rupesh19*8@portals.marketcheck.com:4567/anand.mahajan/autobot-storm-crawler-st2.0.git
