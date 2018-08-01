@@ -1,6 +1,6 @@
-FROM mattf/storm-base
+FROM mc-cars-storm:storm-base
 
-MAINTAINER Matthew Farrellee <matt@cs.wisc.edu>
+MAINTAINER Suyog Mhatre <suyog.242@gmail.com>
 
 ADD start.sh /
 
