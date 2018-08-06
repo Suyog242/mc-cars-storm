@@ -2,4 +2,4 @@
 
 /configure.sh ${ZOOKEEPER_SERVICE_HOST:-$1}
 
-exec bin/storm nimbus
+exec /opt/apache-storm/bin/storm nimbus
