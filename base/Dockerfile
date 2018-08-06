@@ -6,7 +6,7 @@ RUN  apt-get update -y && apt-get install -y default-jre && apt-get install -y c
 RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 RUN \curl -sSL https://get.rvm.io | bash
 RUN \curl -sSL https://get.rvm.io | bash -s stable --ruby
-RUN source /etc/profile.d/rvm.sh
+#RUN source /etc/profile.d/rvm.sh
 RUN source /usr/local/rvm/scripts/rvm
 
 RUN curl -s http://redrockdigimark.com/apachemirror/storm/apache-storm-1.2.2/apache-storm-1.2.2.tar.gz  | \
