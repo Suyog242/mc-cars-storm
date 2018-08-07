@@ -1,5 +1,8 @@
 #!/bin/sh
 
+source /etc/profile.d/rvm.sh
+source /usr/local/rvm/scripts/rvm
+
 cat >> conf/storm.yaml <<EOF
 storm.local.dir: "/tmp"
 EOF
