@@ -9,7 +9,7 @@ RUN apt-get install -y openssl curl zlib1g zlib1g-dev libssl-dev libyaml-dev lib
 ENV PATH /usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 #Install rvm
-RUN apt-get install -y --no-install-recommends ca-certificates wget && wget -O /usr/local/bin/rvm-installer "https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer" && wget -O /usr/local/bin/rvm-installer.asc "https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer.asc" && gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB && curl -sSL https://get.rvm.io | bash && ./etc/profile.d/rvm.sh && curl -sSL https://get.rvm.io | bash -s stable --ruby && rvm install ruby-2.3  && echo "source /usr/local/rvm/scripts/rvm" >> /etc/profile && echo "rvm use ruby-2.3 --default"  >> /etc/profile
+RUN apt-get install -y --no-install-recommends ca-certificates wget && wget -O /usr/local/bin/rvm-installer "https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer" && wget -O /usr/local/bin/rvm-installer.asc "https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer.asc" && gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB && curl -sSL https://get.rvm.io | bash && curl -sSL https://get.rvm.io | bash -s stable --ruby && rvm install ruby-2.3  && echo "source /usr/local/rvm/scripts/rvm" >> /etc/profile && echo "rvm use ruby-2.3 --default"  >> /etc/profile
 
 #ENV PATH /usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
